@@ -22,9 +22,10 @@ function setup() {
 
 	var ball_options = {
 		isStatic:false,
-		restitution:0.2,
+		restitution:0.3,
 		friction:0,
-		density:1.2,
+		density:5,
+		
 	}
 	
 
@@ -53,7 +54,7 @@ function draw() {
 
 function keyPressed(){
 if(keyDown("UP_ARROW") ){
-	Matter.Body.applyForce(ball,{x:0,y:0},{x:9,y:-11})	
+	Matter.Body.applyForce(ball,{x:0,y:0},{x:80,y:-50})	
 }
 }
 
